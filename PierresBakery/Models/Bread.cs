@@ -1,4 +1,4 @@
-namespace Pierres //project name
+namespace PierresBakery //project name
 {
   public class Bread
   {
