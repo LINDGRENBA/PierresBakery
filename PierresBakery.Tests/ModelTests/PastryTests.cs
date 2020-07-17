@@ -4,7 +4,7 @@ using PierresBakery;
 namespace PierresBakery.Tests
 {
   [TestClass]
-  public class PastryTests
+  public class PastryTests : IDisposable
   {
     // test methods go here
     [TestMethod]
@@ -29,5 +29,15 @@ namespace PierresBakery.Tests
       Pastry firstPastryOrder = new Pastry(numOfPastries);
       Assert.AreEqual(5, firstPastryOrder.CalculatePastryCost(5));
     }
+
+    [TestMethod]
+    public void CalculatePastryCost_CalculateComplexTotalPastryCost_Int()
+    {
+      int numOfPastries = 0;
+      Pastry noPastries = new Pastry(numOfPastries);
+      Assert.AreEqual(0, noPastries.TotalCostForPastries);
+    }
+
+
   }
 }
