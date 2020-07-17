@@ -8,5 +8,10 @@ namespace PierresBakery //project name
     {
       NumOfPastries = numOfPastries;
     }
+
+    public int CalculatePastryCost(int numOfPastries)
+    {
+      return 100;
+    }
   }
 }
