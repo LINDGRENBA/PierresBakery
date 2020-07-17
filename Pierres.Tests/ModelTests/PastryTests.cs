@@ -10,8 +10,16 @@ namespace Pierres.Tests
     [TestMethod]
     public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
     {
-      Pastry pastryOrder = new Pastry(); //if we pass arguments in future tests, we'll need to add a paramater in ()
+      Pastry pastryOrder = new Pastry(3); 
       Assert.AreEqual(typeof(Pastry), pastryOrder.GetType());
+    }
+
+    [TestMethod]
+    public void PastryConstructor_HasNumOfPastries_Pastry()
+    {
+      int pastryNum = 3;
+      Pastry yummyPastries = new Pastry(pastryNum);
+      Assert.AreEqual(pastryNum, yummyPastries.NumOfPastries);
     }
   }
 }

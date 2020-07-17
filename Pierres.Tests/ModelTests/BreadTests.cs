@@ -18,8 +18,8 @@ namespace Pierres.Tests
     public void BreadConstructor_HasNumOfLoavesField_Bread()
     {
       int breadNum = 5;
-      Bread myBread = new Bread(breadNum);
-      Assert.AreEqual(breadNum, myBread.NumOfLoaves);
+      Bread deliciousBread = new Bread(breadNum);
+      Assert.AreEqual(breadNum, deliciousBread.NumOfLoaves);
     }
   }
 }

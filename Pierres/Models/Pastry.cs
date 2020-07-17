@@ -2,6 +2,11 @@ namespace Pierres //project name
 {
   public class Pastry
   {
-    // pastry properties, constructors and methods go here
+    public int NumOfPastries { get; set; }
+
+    public Pastry(int numOfPastries)
+    {
+      NumOfPastries = 100;
+    }
   }
 }
