@@ -2,12 +2,13 @@ namespace Pierres //project name
 {
   public class Bread
   {
-    public int NumOfLoaves; //declare
+    //declare auto implemented property
+    public int NumOfLoaves { get; set; } 
 
     // now create the constructor function
     public Bread(int numOfLoaves)
     {
-      NumOfLoaves = numOfLoaves; //set value
+      NumOfLoaves = 10;
     }
   }
 }

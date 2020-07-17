@@ -10,8 +10,16 @@ namespace Pierres.Tests
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
-      Bread breadOrder = new Bread(); //if we pass arguments in future tests, we'll need to add a paramater in ()
+      Bread breadOrder = new Bread(5);
       Assert.AreEqual(typeof(Bread), breadOrder.GetType());
+    }
+
+    [TestMethod]
+    public void BreadConstructor_HasNumOfLoavesField_Bread()
+    {
+      int breadNum = 5;
+      Bread myBread = new Bread(breadNum);
+      Assert.AreEqual(breadNum, myBread.NumOfLoaves);
     }
   }
 }

@@ -44,9 +44,9 @@ _Have you gotten your daily serving of bread and pastries? No? Well don't worry.
 
 ## Known Bugs
 
-| Bug : Message | Resolved (Y/N) |  How was the issue resolved?  |
-| ------- | ----- | ------ |
-|  |  |  | 
+| Bug : Message |  Situation  | Resolved (Y/N) |  How was the issue resolved?  |
+| ------- | ----- | ------ | ------- |
+| Models\Bread.cs(11,7): error CS0201: Only assignment, call, increment, decrement, await, and new object expressions can be used as a statement [C:\Users\blindgren\Desktop\EPICODUS\Full Time Bootcamp\CS-and-NETCore\independent-projects\Pierres.Solution\Pierres\Pierres.csproj] | Running constructor test | Y |  Change paramater for first test to int data type  | 
 
 
 ## Support and contact details
