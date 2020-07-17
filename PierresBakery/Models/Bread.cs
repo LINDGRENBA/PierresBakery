@@ -11,9 +11,16 @@ namespace PierresBakery //project name
       TotalCostForLoaves = CalculateLoafCost(numOfLoaves);
     }
 
-    public int CalculateBreadCost(int numOfLoaves)
+    public int CalculateLoafCost(int numOfLoaves)
     {
-      
+      if(numOfLoaves <= 0)
+      {
+        return 0;
+      }
+      else
+      {
+        return numOfLoaves * 11;
+      }
     }
   }
 }

@@ -27,7 +27,7 @@ namespace PierresBakery.Tests
     {
       int numOfLoaves = 2;
       Bread firstBreadOrder = new Bread(numOfLoaves);
-      Assert.AreEqual(10, firstBreadOrder.CalculateBreadCost(2));
+      Assert.AreEqual(10, firstBreadOrder.CalculateLoafCost(2));
     }
   }
 }
