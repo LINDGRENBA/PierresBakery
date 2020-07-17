@@ -4,9 +4,15 @@ using PierresBakery;
 namespace PierresBakery.Tests
 {
   [TestClass]
-  public class PastryTests : IDisposable
+  public class PastryTests 
+  // : IDisposable
   {
-    // test methods go here
+
+    // public void Dispose()
+    // {
+    //   Pastry.ClearAll();
+    // }
+
     [TestMethod]
     public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
     {
