@@ -2,6 +2,12 @@ namespace Pierres //project name
 {
   public class Bread
   {
-    // bread properties, constructors and methods go here
+    public int NumOfLoaves; //declare
+
+    // now create the constructor function
+    public Bread(int numOfLoaves)
+    {
+      NumOfLoaves = numOfLoaves; //set value
+    }
   }
 }
