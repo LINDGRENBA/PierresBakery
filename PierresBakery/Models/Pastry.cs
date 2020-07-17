@@ -3,6 +3,7 @@ namespace PierresBakery //project name
   public class Pastry
   {
     public int NumOfPastries { get; set; }
+    public int TotalCostForPastires { get; set; }
 
     public Pastry(int numOfPastries)
     {
@@ -11,7 +12,7 @@ namespace PierresBakery //project name
 
     public int CalculatePastryCost(int numOfPastries)
     {
-      return 5;
+      
     }
   }
 }
