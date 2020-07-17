@@ -21,5 +21,13 @@ namespace PierresBakery.Tests
       Bread deliciousBread = new Bread(breadNum);
       Assert.AreEqual(breadNum, deliciousBread.NumOfLoaves);
     }
+
+    [TestMethod]
+    public void CalculateBreadCost_CalculatesTotalCostOfBread_Int()
+    {
+      int numOfLoaves = 2;
+      Bread firstBreadOrder = new Bread(numOfLoaves);
+      Assert.AreEqual(10, firstBreadOrder.CalculateBreadCost(2));
+    }
   }
 }

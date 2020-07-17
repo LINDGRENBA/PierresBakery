@@ -10,5 +10,10 @@ namespace PierresBakery //project name
     {
       NumOfLoaves = numOfLoaves;
     }
+
+    public int CalculateBreadCost(int numOfLoaves)
+    {
+      return 5;
+    }
   }
 }

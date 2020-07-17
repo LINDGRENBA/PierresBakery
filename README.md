@@ -14,8 +14,8 @@ _Have you gotten your daily serving of bread and pastries? No? Well don't worry.
 |----------|:-------------:|------:|-----------:|
 | Program will create a **Bread class** | n/a | Bread(){} | Y |
 | Program will create a **Pastry class** | n/a | Pastry(){} | Y |
-| Program will create an **instance of Bread** with **one paramater** - NumOfLoaves | n/a | Bread(){NumOfLoaves;} | N |
-| Program will create an **instance of Pastry** with **one paramater** - NumOfPastries | n/a | Pastry(){NumOfPastries;} | N |
+| Program will create an **instance of Bread** with **one paramater** - NumOfLoaves | n/a | Bread(){NumOfLoaves;} | Y |
+| Program will create an **instance of Pastry** with **one paramater** - NumOfPastries | n/a | Pastry(){NumOfPastries;} | Y |
 | Program will **calculate total cost for bread** | 2 loaves of bread | $10 | N |
 | Program will **calculate total cost for pastry** | 1 pastry, 3 pastries | $2, $5 | N |
 |  |  |  |  |
