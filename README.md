@@ -10,9 +10,14 @@ _Have you gotten your daily serving of bread and pastries? No? Well don't worry.
 
 ## Specifications
 
-| Behavior   |   Input   |  Output |
-|----------|:-------------:|------:|
+| Behavior   |   Input   |  Output |  Met? (Y/N)  |
+|----------|:-------------:|------:|-----------:|
+| Program will create two classes | n/a | Bread(){}, Pastry(){} | N |
+| Program will take in numbers that represents bread and pastry order | 2, 4 | 2 loaves of bread, 4 pastries | N |
+| Program will calculate total cost for bread | 2 loaves of bread | $10 | N |
+| Program will calculate total cost for pastry | 1 pastry, 3 pastries | $2, $5 | N |
 |  |  |  |  |
+
 
 
 ## Setup/Installation Requirements
