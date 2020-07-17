@@ -11,7 +11,7 @@ namespace Pierres.Tests
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
       Bread breadOrder = new Bread(); //if we pass arguments in future tests, we'll need to add a paramater in ()
-      Assert.AreEqual(typeof(Bread), breadOrder);
+      Assert.AreEqual(typeof(Bread), breadOrder.GetType());
     }
   }
 }
