@@ -7,5 +7,10 @@ namespace Pierres.Tests
   public class BakeryTests
   {
     // test methods go here
+    [TestMethod]
+    public void name_name_name()
+    {
+      //AAA
+    }
   }
 }
