@@ -12,7 +12,7 @@ namespace PierresBakery //project name
       NumOfLoaves = numOfLoaves;
       TotalCostForLoaves = CalculateLoafCost(numOfLoaves);
       ExtraLoaves = CalculateExtraLoaves(numOfLoaves);
-      TotalBreadLoaves = NumOfLoaves + -1;
+      TotalBreadLoaves = NumOfLoaves + ExtraLoaves;
     }
 
     public int CalculateLoafCost(int numOfLoaves)
