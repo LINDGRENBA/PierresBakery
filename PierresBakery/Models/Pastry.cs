@@ -29,8 +29,7 @@ namespace PierresBakery //project name
         int pastryDeal = timesDivByThree * 5;
         int pastryRegular = remainder * 2;
 
-        return 100;
-        //pastryDeal + pastryRegular;
+        return pastryDeal + pastryRegular;
       }
     }
 

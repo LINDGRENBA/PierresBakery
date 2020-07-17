@@ -39,9 +39,9 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void CalculatePastryCost_CalculateComplexTotalPastryCost_Int()
     {
-      int numOfPastries = 0;
-      Pastry noPastries = new Pastry(numOfPastries);
-      Assert.AreEqual(0, noPastries.TotalCostForPastries);
+      int numOfPastries = 20;
+      Pastry allThePastries = new Pastry(numOfPastries);
+      Assert.AreEqual(34, allThePastries.TotalCostForPastries);
     }
 
 
