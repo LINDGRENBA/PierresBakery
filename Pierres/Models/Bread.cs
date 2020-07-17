@@ -8,7 +8,7 @@ namespace Pierres //project name
     // now create the constructor function
     public Bread(int numOfLoaves)
     {
-      NumOfLoaves = 10;
+      NumOfLoaves = numOfLoaves;
     }
   }
 }
