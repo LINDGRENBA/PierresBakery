@@ -37,5 +37,13 @@ namespace PierresBakery.Tests
       Bread secondBreadOrder = new Bread(numOfLoaves);
       Assert.AreEqual(5, secondBreadOrder.CalculateExtraLoaves(numOfLoaves));
     }
+
+    [TestMethod]
+    public void LoafGetter_GetLoafTotalForOrder_Int()
+    {
+      int numOfLoaves = 10;
+      Bread thirdBreadOrder = new Bread(numOfLoaves);
+      Assert.AreEqual(15, thirdBreadOrder.TotalBreadLoaves);
+    }
   }
 }

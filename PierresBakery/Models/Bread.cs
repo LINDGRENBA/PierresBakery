@@ -5,12 +5,14 @@ namespace PierresBakery //project name
     public int NumOfLoaves { get; set; } 
     public int TotalCostForLoaves { get; set; }
     public int ExtraLoaves { get; set; }
+    public int TotalBreadLoaves { get; set; }
 
     public Bread(int numOfLoaves)
     {
       NumOfLoaves = numOfLoaves;
       TotalCostForLoaves = CalculateLoafCost(numOfLoaves);
       ExtraLoaves = CalculateExtraLoaves(numOfLoaves);
+      TotalBreadLoaves = NumOfLoaves + -1;
     }
 
     public int CalculateLoafCost(int numOfLoaves)
