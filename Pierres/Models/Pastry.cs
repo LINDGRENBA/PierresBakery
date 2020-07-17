@@ -1,6 +1,6 @@
 namespace Pierres //project name
 {
-  public class PastryX
+  public class Pastry
   {
     // pastry properties, constructors and methods go here
   }
