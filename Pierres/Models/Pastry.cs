@@ -6,7 +6,7 @@ namespace Pierres //project name
 
     public Pastry(int numOfPastries)
     {
-      NumOfPastries = 100;
+      NumOfPastries = numOfPastries;
     }
   }
 }
