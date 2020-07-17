@@ -8,9 +8,10 @@ namespace Pierres.Tests
   {
     // test methods go here
     [TestMethod]
-    public void name_name_name()
+    public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
-      //AAA
+      Bread breadOrder = new Bread(); //if we pass arguments in future tests, we'll need to add a paramater in ()
+      Assert.AreEqual(typeof(Bread), breadOrder);
     }
   }
 }

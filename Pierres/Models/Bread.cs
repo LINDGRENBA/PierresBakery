@@ -1,6 +1,6 @@
 namespace Pierres //project name
 {
-  public class Bread
+  public class BreadX
   {
     // bread properties, constructors and methods go here
   }
