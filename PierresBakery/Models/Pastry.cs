@@ -32,10 +32,5 @@ namespace PierresBakery //project name
         return pastryDeal + pastryRegular;
       }
     }
-
-    // public static void ClearAll()
-    // {
-    //   _
-    // }
   }
 }

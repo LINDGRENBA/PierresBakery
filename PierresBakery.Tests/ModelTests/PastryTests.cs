@@ -5,14 +5,7 @@ namespace PierresBakery.Tests
 {
   [TestClass]
   public class PastryTests 
-  // : IDisposable
   {
-
-    // public void Dispose()
-    // {
-    //   Pastry.ClearAll();
-    // }
-
     [TestMethod]
     public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
     {
@@ -43,7 +36,5 @@ namespace PierresBakery.Tests
       Pastry allThePastries = new Pastry(numOfPastries);
       Assert.AreEqual(34, allThePastries.TotalCostForPastries);
     }
-
-
   }
 }
