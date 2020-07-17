@@ -23,11 +23,19 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
-    public void CalculateBreadCost_CalculatesTotalCostOfBread_Int()
+    public void CalculateLoafCost_CalculatesTotalCostOfLoaves_Int()
     {
       int numOfLoaves = 2;
       Bread firstBreadOrder = new Bread(numOfLoaves);
       Assert.AreEqual(10, firstBreadOrder.CalculateLoafCost(2));
+    }
+
+    [TestMethod]
+    public void CalculateExtraLoaves_CalculatesHowManyExtraLoaves_Int()
+    {
+      int numOfLoaves = 1;
+      Bread secondBreadOrder = new Bread(numOfLoaves);
+      Assert.AreEqual(0, secondBreadOrder.CalculateExtraLoaves(numOfLoaves));
     }
   }
 }

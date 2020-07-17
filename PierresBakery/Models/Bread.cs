@@ -4,11 +4,13 @@ namespace PierresBakery //project name
   {
     public int NumOfLoaves { get; set; } 
     public int TotalCostForLoaves { get; set; }
+    public int ExtraLoaves { get; set; }
 
     public Bread(int numOfLoaves)
     {
       NumOfLoaves = numOfLoaves;
       TotalCostForLoaves = CalculateLoafCost(numOfLoaves);
+      ExtraLoaves = 0;
     }
 
     public int CalculateLoafCost(int numOfLoaves)
@@ -20,6 +22,18 @@ namespace PierresBakery //project name
       else
       {
         return numOfLoaves * 5;
+      }
+    }
+
+    public int CalculateExtraLoaves(int numOfLoaves)
+    {
+      if(numOfLoaves < 2)
+      {
+        return -1;
+      }
+      else
+      {
+        return -1;
       }
     }
   }
