@@ -24,6 +24,9 @@ namespace PierresBakery
         Bread breadOrder = new Bread(breadRequest);
         Pastry pastryOrder = new Pastry(pastryRequest);
 
+        Console.WriteLine("Your total today will be $" + breadOrder.CalculateOrderCost(breadOrder.TotalCostForLoaves, pastryOrder.TotalCostForPastries));
+        Console.WriteLine(pastryOrder);
+        
       }
       else
       {
