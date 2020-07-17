@@ -10,7 +10,7 @@ namespace PierresBakery //project name
     {
       NumOfLoaves = numOfLoaves;
       TotalCostForLoaves = CalculateLoafCost(numOfLoaves);
-      ExtraLoaves = 0;
+      ExtraLoaves = CalculateExtraLoaves(numOfLoaves);
     }
 
     public int CalculateLoafCost(int numOfLoaves)
@@ -29,11 +29,12 @@ namespace PierresBakery //project name
     {
       if(numOfLoaves < 2)
       {
-        return -1;
+        return 0;
       }
       else
       {
-        return -1;
+        int extras = numOfLoaves / 2;
+        return extras;
       }
     }
   }

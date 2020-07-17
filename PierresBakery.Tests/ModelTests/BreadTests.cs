@@ -33,9 +33,9 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void CalculateExtraLoaves_CalculatesHowManyExtraLoaves_Int()
     {
-      int numOfLoaves = 1;
+      int numOfLoaves = 10;
       Bread secondBreadOrder = new Bread(numOfLoaves);
-      Assert.AreEqual(0, secondBreadOrder.CalculateExtraLoaves(numOfLoaves));
+      Assert.AreEqual(5, secondBreadOrder.CalculateExtraLoaves(numOfLoaves));
     }
   }
 }
