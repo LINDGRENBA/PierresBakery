@@ -19,7 +19,7 @@ namespace PierresBakery //project name
       }
       else
       {
-        return numOfLoaves * 11;
+        return numOfLoaves * 5;
       }
     }
   }
