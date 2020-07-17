@@ -4,9 +4,11 @@
 
 #### By _**Brittany Lindgren**_
 
+
 ## Description
 
 _Have you gotten your daily serving of bread and pastries? No? Well don't worry. Now you can order both Bread and Pastries from Pierre's Bakery, a small family owned business that values community... and delicious bread._
+
 
 ## Specifications
 
@@ -20,12 +22,16 @@ _Have you gotten your daily serving of bread and pastries? No? Well don't worry.
 | Program will **calculate total cost for pastry** | 0 pastries, 1 pastry, 3 pastries, 20 pastries | $0, $2, $5, $34 | Y |
 | Program will **calculate number of extra loaves** for order | order = 2 loaves of bread | 1 free loaf/loaves | Y |
 | Program will calculate total number of loaves for order with extra loaves accounted for | 10 loaves |  15 total loaves | Y |
+| Program will calculate total cost of order | pastry cost $5, bread cost $10 | total cost $15 | N |
+
+
+## Stretch Goals
+| Behavior   |   Input   |  Output |  Met? (Y/N)  |
+|----------|:-------------:|------:|-----------:|
 |  |  |  |  |
 
 
-
 ## Setup/Installation Requirements
-
 
   1. Follow this [link to the project repository](https://github.com/LINDGRENBA/PierresBakery) on GitHub.  
   2. Click on the "Clone or download" button to copy the project link.     
@@ -55,6 +61,7 @@ _Have you gotten your daily serving of bread and pastries? No? Well don't worry.
 
 _Please feel free to contact the authors through GitHub (LINDGRENBA) with any feedback, questions or concerns._
 
+
 ## Technologies Used
 
 * C# 
@@ -62,6 +69,7 @@ _Please feel free to contact the authors through GitHub (LINDGRENBA) with any fe
 * Visual Studio Code
 * Git Version Control 
 * GitHub
+
 
 ### License
 

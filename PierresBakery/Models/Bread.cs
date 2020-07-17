@@ -39,5 +39,11 @@ namespace PierresBakery //project name
         return extras;
       }
     }
+
+    public static int CalculateOrderCost(int TotalCostForLoaves, int TotalCostForPastries)
+    {
+      return 0;
+      //TotalCostForLoaves + TotalCostForPastries;
+    }
   }
 }

@@ -39,11 +39,29 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
-    public void LoafGetter_GetLoafTotalForOrder_Int()
+    public void LoafGetter_GetTotalNumberOfLoavesForOrder_Int()
     {
       int numOfLoaves = 10;
       Bread thirdBreadOrder = new Bread(numOfLoaves);
       Assert.AreEqual(15, thirdBreadOrder.TotalBreadLoaves);
+    }
+
+    [TestMethod]
+    public void CalculateOrderCost_GetCostOfOrder_Int()
+    {
+      int numOfLoaves = 2;
+
+      Bread fourthBreadOrder = new Bread(numOfLoaves);
+
+      int totalCostForLoaves = fourthBreadOrder.CalculateLoafCost(numOfLoaves);
+
+      int totalCostForPastries = 5;
+
+      int totalOrderCost = totalCostForLoaves + totalCostForPastries;
+
+      Assert.AreEqual(totalCostForLoaves, fourthBreadOrder.CalculateLoafCost(numOfLoaves));
+      
+      Assert.AreEqual(totalOrderCost, fourthBreadOrder.CalculateOrderCost(totalCostForLoaves, totalCostForPastries));
     }
   }
 }
