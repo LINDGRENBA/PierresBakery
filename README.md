@@ -18,7 +18,8 @@ _Have you gotten your daily serving of bread and pastries? No? Well don't worry.
 | Program will create an **instance of Pastry** with **one paramater** - NumOfPastries | n/a | Pastry(){NumOfPastries;} | Y |
 | Program will **calculate total cost for bread** | 0 loaves, 2 loaves, 5 loaves | $0, $10, $25 | Y |
 | Program will **calculate total cost for pastry** | 0 pastries, 1 pastry, 3 pastries, 20 pastries | $0, $2, $5, $34 | Y |
-| Program will **calculate number of extra loaves** for order | order = 2 loaves of bread | 1 free loaf/loaves | N |
+| Program will **calculate number of extra loaves** for order | order = 2 loaves of bread | 1 free loaf/loaves | Y |
+| Program will calculate total number of loaves for order with extra loaves accounted for | 10 loaves |  15 total loaves | N |
 | Program will **calculate total cost of order** | 3 pastries, 2 loaves of bread | $5 + $10 = $15 | N |
 |  |  |  |  |
 
