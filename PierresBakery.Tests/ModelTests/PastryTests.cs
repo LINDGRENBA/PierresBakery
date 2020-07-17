@@ -27,7 +27,7 @@ namespace PierresBakery.Tests
     {
       int numOfPastries = 5;
       Pastry firstPastryOrder = new Pastry(numOfPastries);
-      Assert.AreEqual(10, firstPastryOrder.CalculatePastryCost(5));
+      Assert.AreEqual(5, firstPastryOrder.CalculatePastryCost(5));
     }
   }
 }
