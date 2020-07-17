@@ -4,7 +4,7 @@ using Pierres;
 namespace Pierres.Tests
 {
   [TestClass]
-  public class BakeryTests
+  public class BreadTests
   {
     // test methods go here
     [TestMethod]
