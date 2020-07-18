@@ -34,24 +34,31 @@ namespace PierresBakery
         Console.WriteLine("You've requested " + pastryRequest + " pastries.");
         Console.WriteLine("------------------");
 
-        //ORDER TOTAL
-        Console.WriteLine("Your total today will be $" + breadOrder.CalculateOrderCost(breadOrder.TotalCostForLoaves, pastryOrder.TotalCostForPastries) + ".00");
-        Console.Write("Would you like a copy of your receipt? (Yes / No) : ");
-        string wantReceipt = Console.ReadLine().ToUpper();
-        
-        if(wantReceipt == "YES")
+        if((breadOrder.NumOfLoaves == 0) && (pastryOrder.NumOfPastries == 0))
         {
-          Console.WriteLine("Here's a copy of your receipt : ");
-          Console.WriteLine("------------------");
-          Console.WriteLine(breadOrder.NumOfLoaves + " loaf/loaves of bread, for a total of " + breadOrder.TotalBreadLoaves + " loaf/loaves with our buy 2 get 1 free special : $" + breadOrder.TotalCostForLoaves + ".00");
-          Console.WriteLine(pastryOrder.NumOfPastries + " pastries : $" + pastryOrder.TotalCostForPastries + ".00");
-          Console.WriteLine("Today's Total : " + breadOrder.CalculateOrderCost(breadOrder.TotalCostForLoaves, pastryOrder.TotalCostForPastries) + ".00");
-          Console.WriteLine("Thank you for your business and have a nice day!");
+          Console.WriteLine("Hmmm. Sounds like you don't really want to order anything today. That's okay! Have a look around if you like and let me know if you change your mind.");
         }
         else
         {
-          Console.WriteLine("Have a nice day, then. Thank you for your business!");
-        }        
+          //ORDER TOTAL
+          Console.WriteLine("Your total today will be $" + breadOrder.CalculateOrderCost(breadOrder.TotalCostForLoaves, pastryOrder.TotalCostForPastries) + ".00");
+          Console.Write("Would you like a copy of your receipt? (Yes / No) : ");
+          string wantReceipt = Console.ReadLine().ToUpper();
+          
+          if(wantReceipt == "YES")
+          {
+            Console.WriteLine("Here's a copy of your receipt : ");
+            Console.WriteLine("------------------");
+            Console.WriteLine(breadOrder.NumOfLoaves + " loaf/loaves of bread, for a total of " + breadOrder.TotalBreadLoaves + " loaf/loaves with our buy 2 get 1 free special : $" + breadOrder.TotalCostForLoaves + ".00");
+            Console.WriteLine(pastryOrder.NumOfPastries + " pastries : $" + pastryOrder.TotalCostForPastries + ".00");
+            Console.WriteLine("Today's Total : " + breadOrder.CalculateOrderCost(breadOrder.TotalCostForLoaves, pastryOrder.TotalCostForPastries) + ".00");
+            Console.WriteLine("Thank you for your business and have a nice day!");
+          }
+          else
+          {
+            Console.WriteLine("Have a nice day, then. Thank you for your business!");
+          }        
+        }
       }
       else
       {
